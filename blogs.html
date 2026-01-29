@@ -5,12 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人博客 - 流转星</title>
+    <title>个人博客 - 张同学</title>
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
     <script>
         (async function () {
             // 这是您唯一需要修改的部分，将API_BASE_URL替换为您的后端API地址记得加后缀/api
-            window.API_BASE_URL = 'https://your-domain.com/api';
+            window.API_BASE_URL = 'http://localhost:3001/api';
             try {
                 // 请求背景接口
                 const bgResponse = await fetch(`${window.API_BASE_URL}/backgrounds`);
@@ -1965,20 +1965,20 @@
                     <div class="decorative-icons">🎶</div>
                 </div>
                 <div class="profile-info">
-                    <h1>你好，我是<span class="name-wrapper"><span class="char">流</span><span class="char">转</span><span
-                                class="char">星</span></span></h1>
-                    <div class="role">👨‍💻 Unity个人开发者</div>
-                    <div class="motto">📚 爱我宝宝，用心去对待事情</div>
+                    <h1>你好，我是<span class="name-wrapper"><span class="char">张</span><span class="char">同</span><span
+                                class="char">学</span></span></h1>
+                    <div class="role">👨‍💻JAVA开发者</div>
+                    <div class="motto">📚 理性思考，明辨是非</div>
                     <div class="social-links">
-                        <a href="https://github.com/Besty0728" target="_blank" rel="noopener" class="social-link" title="GitHub">
+                        <a href="https://github.com/zbaction" target="_blank" rel="noopener" class="social-link" title="GitHub">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                                 <path
                                     d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
                             </svg>
                         </a>
                         <a href="mailto:a2120060205@icloud.com" target="_blank" class="social-link"
-                            title="Email:a2120060205@icloud.com">📧</a>
-                        <a href="https://space.bilibili.com/420378171" target="_blank" rel="noopener" class="social-link"
+                            title="Email:zb3345600460@gmail.com">📧</a>
+                        <a href="https://space.bilibili.com/1907349180" target="_blank" rel="noopener" class="social-link"
                             title="Bilibili">
                             <img src="images/bilibili.png" alt="Bilibili Icon">
                         </a>
@@ -1990,16 +1990,16 @@
             <!-- Info Cards -->
             <div class="info-cards-container">
                 <div class="info-card glass-card">
-                    <div>📍 中国山东</div>
-                    <div>🏢 泰安</div>
+                    <div>📍 中国湖南</div>
+                    <div>🏢 </div>
                 </div>
                 <div class="info-card glass-card">
                     <div>⌨️ 手速一般,AI大王 </div>
                     <div>🖥️ Windows/Linux</div>
                 </div>
                 <div class="info-card glass-card">
-                    <div>🎧 爱听双J、邓紫棋、孙燕姿...</div>
-                    <div>🎵 珊瑚海、倒带、多远都要在一起、我怀念的...</div>
+                    <div>🎧 周杰伦</div>
+                    <div>🎵 晴天</div>
                 </div>
             </div>
 
@@ -2765,7 +2765,7 @@
                 const settings = await response.json();
                 if (settings.profile_name) document.querySelector('.role').innerHTML = `👨‍💻 ${settings.profile_role || 'Unity个人开发者'}`;
                 if (settings.profile_motto) document.querySelector('.motto').innerHTML = `📚 ${settings.profile_motto}`;
-                if (settings.profile_location) document.querySelector('.info-card:first-child').innerHTML = `<div>📍 ${settings.profile_location}</div><div>🏢 泰安</div>`;
+                if (settings.profile_location) document.querySelector('.info-card:first-child').innerHTML = `<div>📍 ${settings.profile_location}</div><div>🏢 邵阳</div>`;
             } catch (error) {
                 console.error('Failed to load settings:', error);
             }
